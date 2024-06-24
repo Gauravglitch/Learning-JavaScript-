@@ -1,8 +1,8 @@
 function main() {
     // Declare one string,double and integer
-    var i1 = 4
-    var d1 = 4.0
-    var s1 = "HackerRank "
+    var i1 = 12
+    var d1 = 8
+    var s1 = "Red Label"
     //declared variables to take integer,double and string as input
     var i2 = Number(readLine()) // Convert i2 to a number
     var d2 = Number(readLine())// Convert d2 to a number
