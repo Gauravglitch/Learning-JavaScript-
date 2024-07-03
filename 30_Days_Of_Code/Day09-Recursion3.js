@@ -5,13 +5,18 @@ function factorial(n) {
 }
 
 function main() {
-    const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
+// Create a write stream to the output file
+const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
 
-    const n = parseInt(readLine().trim(), 10);
+// Read a line of input from the user
+const n = parseInt(readLine().trim(), 10);
 
-    const result = factorial(n);
+// Calculate the factorial of n
+const result = factorial(n);
 
-    ws.write(result + '\n');
+// Write the result to the output file
+ws.write(result + '\n');
 
-    ws.end();
+// Close the write stream
+ws.end();
 }
